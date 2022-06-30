@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+
+*{
+    margin :0;
+    padding:0;
+}
+
+nav{ 
+    background-color: rgb(20, 6, 35);
+    color: rgb(176, 234, 213);
+    height: 60px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Trispace',sans-serif;
+
+
+}
+body{
+    background-color: rgb(167 175 207); ;
+}
+nav ul{
+    list-style-type: none;
+    
+}
+li{
+    display: inline-block;
+    margin-right: 30px;
+    
+}
+
+.gamecontainer{
+    
+    background-color: rgb(167 175 207);
+
+    display: flex;
+    justify-content: center ;
+    margin-top: 60px;
+}
+.container{
+    background-color: rgb(199, 209, 247);
+    display: grid;
+    grid-template: repeat(3,12VW)/repeat(3,12VW);
+    font-family: cursive;
+}
+.box{
+    border: 2px solid black;
+    font-size: 10vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.box:hover{
+     background-color: rgb(174, 208, 209);
+}
+.gameInfo{
+    padding-left: 40px;
+    font-family:'Trispace',sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.imgBox img{
+    width: 0;
+    transition: width 1s ease-in-out; 
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+
+#reset{
+    margin-left: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Trispace',sans-serif;
+    background-color: #dab5da;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+@media only screen and (max-width: 800px) {
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        flex-wrap: wrap;
+        margin-top: 20PX;
+
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template: repeat(3,20vw)/repeat(3,20vw);
+    }
+  }
